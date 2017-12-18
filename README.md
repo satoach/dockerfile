@@ -8,7 +8,7 @@ my docker files
 
 
 ## cmd memo
-```
+```sh
 readonly $IMAGE="sakirror/image"
 readonly $DOCKFILE_PATH="."
 readonly $CONTAINER="containername"
