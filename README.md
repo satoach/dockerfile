@@ -12,7 +12,7 @@ my docker files
 readonly IMAGE="sakirror/image"
 readonly DOCKFILE_PATH="."
 readonly VOLPATH_HOST=$PWD
-readonly VOLPATH_GUEST="/src"
+readonly VOLPATH_GUEST="/work"
 
 # build image
 docker build -t $IMAGE $DOCKFILE_PATH

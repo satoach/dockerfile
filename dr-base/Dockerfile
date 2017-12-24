@@ -17,3 +17,5 @@ RUN \
     tar xvzf peco_linux_amd64.tar.gz && \
     mv peco_linux_amd64/peco /usr/local/bin && \
     rm -rf peco_linux_amd64*
+
+WORKDIR /work
