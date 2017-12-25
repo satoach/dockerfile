@@ -12,5 +12,6 @@ RUN \
     apt-get autoremove
 
 WORKDIR /work
+ADD makedoxy.sh /usr/local/bin
 
-CMD bash -c "doxgen && cd ./latex && make pdf"
+CMD makedoxy.sh
