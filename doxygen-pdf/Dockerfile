@@ -7,7 +7,7 @@ RUN \
         graphviz \
         texlive-latex-base \
         texlive-latex-extra \
-        vim-tiny \
+        vim \
         make && \
     apt-get autoremove
 
