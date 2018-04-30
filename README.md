@@ -2,11 +2,11 @@
 my docker files
 
 ## Images
-| image      | brief                                                  |
-|------------|--------------------------------------------------------|
-| dr-base    | Development environment in company                     |
-| sphinx-pdf | sphinx (pdf + plantuml + blockdiag + seqdiag + nwdiag) |
-| doxy-pdf   | doxygen (generating pdf file by using texlive)         |
+| image       | brief                                                  |
+|-------------|--------------------------------------------------------|
+| dr-base     | Development environment in company                     |
+| sphinx-pdf  | sphinx (pdf + plantuml + blockdiag + seqdiag + nwdiag) |
+| doxygen-pdf | doxygen (generating pdf file by using texlive)         |
 
 ## cmd memo
 ```sh
