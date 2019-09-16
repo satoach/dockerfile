@@ -1,5 +1,6 @@
 FROM ubuntu:xenial
 
+RUN dpkg --add-architecture i386
 RUN \
     apt-get update && \
     apt-get install -y \
@@ -8,14 +9,14 @@ RUN \
         ncurses-dev \
         rsync \
         curl \
-        git
+        git \
+        wget \
+        cpio \
+        python \
+        unzip \
+        bc \
+        zlib1g:i386 \
+        binutils
 
-RUN \
-    curl -LO $(echo \
-        https://github.com$(curl -L https://github.com/peco/peco/releases/latest | \
-                                    grep -oE "/peco/peco/releases/download/.+/.+amd64.tar.gz")) && \
-    tar xvzf peco_linux_amd64.tar.gz && \
-    mv peco_linux_amd64/peco /usr/local/bin && \
-    rm -rf peco_linux_amd64*
 
 WORKDIR /work
