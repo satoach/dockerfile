@@ -18,5 +18,6 @@ RUN \
         zlib1g:i386 \
         binutils
 
+# ln -sf /usr/include/locale.h /usr/include/xlocale.h
 
 WORKDIR /work
