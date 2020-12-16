@@ -4,7 +4,6 @@ my docker files
 ## Images
 | image       | brief                                                  |
 |-------------|--------------------------------------------------------|
-| dr-base     | development misc                                       |
 | sphinx-pdf  | sphinx (pdf + plantuml + blockdiag + seqdiag + nwdiag) |
 | doxygen-pdf | doxygen (generating pdf file by using texlive)         |
 
