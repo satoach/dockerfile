@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  name:
+    image: sakirror/imagename
+    build:
+      context: path/to/Dockerfile
+    environment:
+      - HTTP_PROXY=$HTTP_PROXY
+    volumes:
+      - ../doc:/work
