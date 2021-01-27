@@ -17,8 +17,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
+import os
 # import sys
+import datetime
 # sys.path.insert(0, os.path.abspath('.'))
 
 rst_prolog= u"""
@@ -138,7 +139,22 @@ latex_elements = {
     'extraclassoptions': ',openany,oneside',
     'classoptions': ',dvipdfmx',
     'babel': '\\usepackage[japanese]{babel}',
-    'preamble': '\setcounter{tocdepth}{3}'
+    'preamble': r'''
+        \setcounter{tocdepth}{3}
+        \renewcommand{\baselinestretch}{0.8}
+
+        \makeatletter
+        \renewcommand{\maketitle}{
+        \begin{center}
+            {\Large \@title} \par
+        \end{center}
+        \begin{flushright}
+            \@date \hspace{3zw} \@author \par
+        \end{flushright}
+        }
+        \makeatother
+    ''',
+    'printindex': '',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -146,7 +162,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'sample.tex', 'sample Documentation',
-     'sakirror', 'manual'),
+     'sakirror', 'howto'),
 ]
 
 
