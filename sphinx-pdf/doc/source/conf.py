@@ -74,8 +74,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'sample'
-copyright = '2017, sakirror'
-author = 'sakirror'
+author = 'author'
+copyright = '2017, '+author
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -162,7 +162,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'sample.tex', 'sample Documentation',
-     'sakirror', 'howto'),
+     author, 'howto'),
 ]
 
 

@@ -13,6 +13,7 @@ readonly IMAGE="sakirror/image"
 readonly DOCKFILE_PATH="."
 readonly VOLPATH_HOST=$PWD
 readonly VOLPATH_GUEST="/work"
+readonly SERVICE_NAME="service"
 
 # build image
 $ docker build -t $IMAGE $DOCKFILE_PATH
@@ -22,4 +23,6 @@ $ docker pull $IMAGE
 
 # run container
 $ docker run --rm -it -v $VOLPATH_HOST:$VOLPATH_GUEST $IMAGE
+# or
+$ docker-compose run --rm $SERVICE_NAME
 ```
