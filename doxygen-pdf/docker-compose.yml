@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  doxy:
+    image: sakirror/doxygen-pdf
+    volumes:
+      - ..:/work
+    command: /bin/bash -c "doxygen && cd ./latex && make pdf"
