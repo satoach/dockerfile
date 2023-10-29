@@ -1,0 +1,7 @@
+version: '3'
+services:
+  sphinx-doxy:
+    image: satoach/sphinx-doxy
+    container_name: sphinx-doxy
+    volumes:
+        - .:/work

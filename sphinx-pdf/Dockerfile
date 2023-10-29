@@ -1,5 +1,4 @@
 FROM ubuntu:bionic
-MAINTAINER sakirror
 
 WORKDIR /work
 ADD requirements.txt /work

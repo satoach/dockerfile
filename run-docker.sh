@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE="sakirror/imagename"
+IMAGE="satoach/imagename"
 DOCKFILE="./path/to/Dockerfile"
 VOLPATH_HOST="${PWD}/path/to/volume"
 VOLPATH_GUEST="/work"

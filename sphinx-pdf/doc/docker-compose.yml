@@ -1,7 +1,7 @@
 version: '3'
 services:
   sphinx:
-    image: sakirror/sphinx-pdf
+    image: satoach/sphinx-pdf
     container_name: sphinx
     volumes:
         - .:/work
